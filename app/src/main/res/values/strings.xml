@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mars Rover</string>
+    <string name="sol">Sol: %s</string>
+    <string name="earth_date">Earth date: %s</string>
+    <string name="number_of_photo">Number of photo: %s</string>
+
+    <string name="error">Error</string>
+    <string name="loading">Loading</string>
+
+    <string name="rover">Rover</string>
+    <string name="saved">Saved</string>
+</resources>
