@@ -1,4 +1,4 @@
-# mars-phto-exporer
+# mars-photo-exporer
 This Android application shows photo taken by the Mars rovers send by NASA.
 
 This app is example for this [Android Jetpack Compose Udemy course](https://www.udemy.com/course/android-jetpack-compose-retrofit-room-hilt/)
