@@ -5,9 +5,7 @@ This app is example for this [Android Jetpack Compose Udemy course](https://www.
 
 ### Features
 
-<video width="200" controls>
-  <source src="raw/compse_mars_rover_android_application.mp4" type="video/mp4">
-</video>
+<img width="200" alt="Demo of Mars photo explorer application" src="raw/compse_mars_rover_android_application.gif"/>
 
 The first screen display a list of rovers hard coded in the app.
 
@@ -36,5 +34,7 @@ The Android UI component are represented in green. The Activity is an Android Ac
 The repository is represented in blue. It will transform and mix data from the data layer.
 
 The data layer in orange are Room and Retrofit interfaces.
+
+An article that describe this [architecture with Hilt, Retrofit, Room with Jetpack Compose is avialable on Medium](https://medium.com/@alexandre.genet7/android-viewmodel-repository-room-and-retrofit-with-jetpack-compose-2b652d8ff3b9).
 
 
