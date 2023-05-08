@@ -55,13 +55,20 @@ fun Manifest(
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
-            Text(text = stringResource(id = R.string.sol, roverManifestUiModel.sol))
-            Text(text = stringResource(id = R.string.earth_date, roverManifestUiModel.earthDate))
+            Text(
+                text = stringResource(id = R.string.sol, roverManifestUiModel.sol),
+                style = MaterialTheme.typography.titleMedium
+            )
+            Text(
+                text = stringResource(id = R.string.earth_date, roverManifestUiModel.earthDate),
+                style = MaterialTheme.typography.bodySmall
+            )
             Text(
                 text = stringResource(
                     id = R.string.number_of_photo,
                     roverManifestUiModel.photoNumber
-                )
+                ),
+                style = MaterialTheme.typography.bodySmall
             )
         }
     }
@@ -77,6 +84,6 @@ fun ManifestPreview() {
             photoNumber = "34"
         ),
         roverName = "",
-        onClick = {_, _ ->}
+        onClick = { _, _ -> }
     )
 }

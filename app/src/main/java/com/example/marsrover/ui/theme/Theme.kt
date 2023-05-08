@@ -24,7 +24,7 @@ private val LightColorScheme = lightColorScheme(
     primary = Orange40,
     secondary = Orange10,
     tertiary = Pink40,
-    surfaceVariant = Orange
+    surfaceVariant = LightYellow
 )
 
 @Composable
@@ -46,7 +46,7 @@ fun MarsRoverTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = MarsRoverTypography,
         content = content
     )
 }

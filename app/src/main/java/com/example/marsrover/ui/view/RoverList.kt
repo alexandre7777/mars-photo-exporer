@@ -63,14 +63,13 @@ fun Rover(
             Text(
                 modifier = Modifier.fillMaxWidth(),
                 text = name,
-                fontWeight = FontWeight.Bold,
-                fontSize = 24.sp,
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Center,
+                style = MaterialTheme.typography.headlineSmall
             )
             Image(painter = painterResource(id = img), contentDescription = null)
-            Text(text = "Credit: NASA/JPL", fontSize = 8.sp)
-            Text(text = "Landing date: $landingDate", fontSize = 12.sp)
-            Text(text = "Distance traveled: $distanceTraveled", fontSize = 12.sp)
+            Text(text = "Credit: NASA/JPL", style = MaterialTheme.typography.labelSmall)
+            Text(text = "Landing date: $landingDate", style = MaterialTheme.typography.bodySmall)
+            Text(text = "Distance traveled: $distanceTraveled", style = MaterialTheme.typography.bodySmall)
         }
     }
 }
