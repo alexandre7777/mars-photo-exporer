@@ -11,4 +11,5 @@ ext {
     hiltVersion = "2.44"
     coilVersion = "2.2.2"
     roomVersion = "2.5.1"
+    mockkVersion = "1.13.5"
 }

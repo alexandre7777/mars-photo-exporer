@@ -3,8 +3,10 @@ package com.example.marsrover.ui.manifestlist
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.marsrover.data.MarsRoverManifestRepo
+import com.example.marsrover.di.IoDispatcher
 import com.example.marsrover.domain.model.RoverManifestUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -12,7 +14,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MarsRoverManifestViewModel @Inject constructor(
-    private val marsRoverManifestRepo: MarsRoverManifestRepo
+    private val marsRoverManifestRepo: MarsRoverManifestRepo,
+    @IoDispatcher private val ioDispatcher: CoroutineDispatcher
 ) : ViewModel() {
 
     private val _roverManifestUiState: MutableStateFlow<RoverManifestUiState> =
@@ -22,7 +25,7 @@ class MarsRoverManifestViewModel @Inject constructor(
         get() = _roverManifestUiState
 
     fun getMarsRoverManifest(roverName: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(ioDispatcher) {
             _roverManifestUiState.value = RoverManifestUiState.Loading
             marsRoverManifestRepo.getMarsRoverManifest(roverName).collect {
                 _roverManifestUiState.value = it
