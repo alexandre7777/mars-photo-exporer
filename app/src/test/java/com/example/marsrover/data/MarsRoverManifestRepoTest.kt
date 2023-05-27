@@ -79,7 +79,7 @@ class MarsRoverManifestRepoTest {
     }
 
     @Test
-    fun `should emit success when manifest service throw timeout exception`() = runTest(coroutineRule.testDispatcher) {
+    fun `should emit error when manifest service throw timeout exception`() = runTest(coroutineRule.testDispatcher) {
         //Given
         coEvery {
             marsRoverManifestService.getMarsRoverManifest("perseverance")
