@@ -37,4 +37,6 @@ The data layer in orange are Room and Retrofit interfaces.
 
 An article that describe this [architecture with Hilt, Retrofit, Room with Jetpack Compose is avialable on Medium](https://medium.com/@alexandre.genet7/android-viewmodel-repository-room-and-retrofit-with-jetpack-compose-2b652d8ff3b9).
 
+A second article describes [testing Hilt, Retrofit, Room with Jetpack Compose with mockk is avialable on Medium](https://medium.com/@alexandre.genet7/android-viewmodel-repository-room-and-retrofit-with-jetpack-the-testing-part-using-mockk-9a1f4ba15aad)
+
 A story on Medium explains how to modify the [theme using Material3](https://medium.com/@alexandre.genet7/material3-colors-and-dark-theme-3c7b7adc685f).
