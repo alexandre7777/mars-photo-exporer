@@ -15,7 +15,6 @@ interface MarsRoverManifestService {
     suspend fun getMarsRoverManifest(@Path("rover_name") roverName: String): RoverManifestRemoteModel
 
     companion object {
-        private const val BASE_URL = "https://api.nasa.gov/"
 
         fun create() : MarsRoverManifestService {
             val logger = HttpLoggingInterceptor()
@@ -27,7 +26,7 @@ interface MarsRoverManifestService {
                 .build()
 
             return Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(BuildConfig.SERVER_URL)
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()

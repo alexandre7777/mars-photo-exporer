@@ -20,6 +20,7 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+        buildConfigField "String", 'SERVER_URL', '"https://api.nasa.gov/"'
     }
 
     buildTypes {
