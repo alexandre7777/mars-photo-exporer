@@ -10,7 +10,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.marsrover"
+        applicationId "com.alexandre.marsrover"
         minSdk 24
         targetSdk 33
         versionCode 1
